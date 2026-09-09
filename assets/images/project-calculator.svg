@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradCalc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#181829" />
+    </linearGradient>
+    <linearGradient id="calcGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="opBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgGradCalc)" />
+  <circle cx="200" cy="150" r="140" fill="#6366f1" opacity="0.08" filter="blur(50px)" />
+  <circle cx="620" cy="300" r="140" fill="#a855f7" opacity="0.08" filter="blur(50px)" />
+
+  <!-- Left Side: Features Card -->
+  <rect x="50" y="70" width="340" height="310" rx="12" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  <text x="80" y="115" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="700">Responsive Calculator</text>
+  <text x="80" y="140" fill="#94a3b8" font-family="sans-serif" font-size="13">Vanilla JavaScript Mathematical Engine</text>
+  
+  <rect x="80" y="170" width="280" height="42" rx="8" fill="#1e293b" />
+  <circle cx="102" cy="191" r="10" fill="#10b981" fill-opacity="0.2" />
+  <text x="102" y="195" fill="#34d399" font-family="sans-serif" font-size="12" text-anchor="middle">✓</text>
+  <text x="125" y="196" fill="#cbd5e1" font-family="sans-serif" font-size="12">Precision arithmetic operations</text>
+
+  <rect x="80" y="222" width="280" height="42" rx="8" fill="#1e293b" />
+  <circle cx="102" cy="243" r="10" fill="#3b82f6" fill-opacity="0.2" />
+  <text x="102" y="247" fill="#60a5fa" font-family="sans-serif" font-size="12" text-anchor="middle">✓</text>
+  <text x="125" y="248" fill="#cbd5e1" font-family="sans-serif" font-size="12">Full keyboard support &amp; events</text>
+
+  <rect x="80" y="274" width="280" height="42" rx="8" fill="#1e293b" />
+  <circle cx="102" cy="295" r="10" fill="#8b5cf6" fill-opacity="0.2" />
+  <text x="102" y="299" fill="#c084fc" font-family="sans-serif" font-size="12" text-anchor="middle">✓</text>
+  <text x="125" y="300" fill="#cbd5e1" font-family="sans-serif" font-size="12">Live expression history tape</text>
+
+  <text x="80" y="350" fill="#818cf8" font-family="monospace" font-size="12">stack: HTML5 • CSS3 • JavaScript</text>
+
+  <!-- Right Side: Centered Calculator Device -->
+  <rect x="440" y="45" width="290" height="360" rx="16" fill="url(#calcGlass)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Screen Display -->
+  <rect x="460" y="65" width="250" height="65" rx="8" fill="#020617" stroke="#1e293b" stroke-width="1" />
+  <text x="695" y="85" fill="#64748b" font-family="monospace" font-size="12" text-anchor="end">2,450 × 18% +</text>
+  <text x="695" y="118" fill="#f8fafc" font-family="monospace" font-size="24" font-weight="bold" text-anchor="end">2,891.00</text>
+
+  <!-- Buttons Grid -->
+  <!-- Row 1 -->
+  <rect x="460" y="145" width="55" height="42" rx="8" fill="#ef4444" fill-opacity="0.2" />
+  <text x="487" y="171" fill="#f87171" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">AC</text>
+  <rect x="525" y="145" width="55" height="42" rx="8" fill="#334155" />
+  <text x="552" y="171" fill="#cbd5e1" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">DEL</text>
+  <rect x="590" y="145" width="55" height="42" rx="8" fill="#334155" />
+  <text x="617" y="171" fill="#cbd5e1" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">%</text>
+  <rect x="655" y="145" width="55" height="42" rx="8" fill="url(#opBtn)" />
+  <text x="682" y="171" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">÷</text>
+
+  <!-- Row 2 -->
+  <rect x="460" y="198" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="487" y="224" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">7</text>
+  <rect x="525" y="198" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="552" y="224" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">8</text>
+  <rect x="590" y="198" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="617" y="224" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">9</text>
+  <rect x="655" y="198" width="55" height="42" rx="8" fill="url(#opBtn)" />
+  <text x="682" y="224" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">×</text>
+
+  <!-- Row 3 -->
+  <rect x="460" y="251" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="487" y="277" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">4</text>
+  <rect x="525" y="251" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="552" y="277" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">5</text>
+  <rect x="590" y="251" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="617" y="277" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">6</text>
+  <rect x="655" y="251" width="55" height="42" rx="8" fill="url(#opBtn)" />
+  <text x="682" y="277" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">−</text>
+
+  <!-- Row 4 -->
+  <rect x="460" y="304" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="487" y="330" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">1</text>
+  <rect x="525" y="304" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="552" y="330" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">2</text>
+  <rect x="590" y="304" width="55" height="42" rx="8" fill="#1e293b" />
+  <text x="617" y="330" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">3</text>
+  <rect x="655" y="304" width="55" height="42" rx="8" fill="url(#opBtn)" />
+  <text x="682" y="330" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">+</text>
+
+  <!-- Row 5 -->
+  <rect x="460" y="357" width="120" height="36" rx="8" fill="#1e293b" />
+  <text x="520" y="380" fill="#f8fafc" font-family="sans-serif" font-size="15" text-anchor="middle">0</text>
+  <rect x="590" y="357" width="55" height="36" rx="8" fill="#1e293b" />
+  <text x="617" y="380" fill="#f8fafc" font-family="sans-serif" font-size="16" text-anchor="middle">.</text>
+  <rect x="655" y="357" width="55" height="36" rx="8" fill="#10b981" />
+  <text x="682" y="380" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">=</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradTodo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#161b30" />
+    </linearGradient>
+    <linearGradient id="primaryTodo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgGradTodo)" />
+  <circle cx="120" cy="80" r="100" fill="#6366f1" opacity="0.1" filter="blur(40px)" />
+  <circle cx="700" cy="350" r="140" fill="#ec4899" opacity="0.08" filter="blur(50px)" />
+
+  <!-- App Window Container -->
+  <rect x="80" y="40" width="640" height="370" rx="14" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+  
+  <!-- Header -->
+  <rect x="80" y="40" width="640" height="48" rx="14" fill="#1e293b" />
+  <circle cx="110" cy="64" r="6" fill="#ef4444" />
+  <circle cx="130" cy="64" r="6" fill="#f59e0b" />
+  <circle cx="150" cy="64" r="6" fill="#10b981" />
+  <text x="400" y="69" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">TaskFlow | Vanilla JS Todo Application</text>
+
+  <!-- Input Field Bar -->
+  <rect x="110" y="110" width="470" height="42" rx="8" fill="#0b0f19" stroke="#334155" stroke-width="1" />
+  <text x="130" y="136" fill="#94a3b8" font-family="sans-serif" font-size="13">What needs to be done today?</text>
+  <rect x="590" y="110" width="100" height="42" rx="8" fill="url(#primaryTodo)" />
+  <text x="640" y="136" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">+ Add Task</text>
+
+  <!-- Filters Row -->
+  <rect x="110" y="170" width="60" height="26" rx="13" fill="#6366f1" />
+  <text x="140" y="187" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">All (5)</text>
+  <rect x="180" y="170" width="75" height="26" rx="13" fill="#1e293b" />
+  <text x="217" y="187" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Active (3)</text>
+  <rect x="265" y="170" width="95" height="26" rx="13" fill="#1e293b" />
+  <text x="312" y="187" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Completed (2)</text>
+
+  <!-- Task 1 (Active) -->
+  <rect x="110" y="210" width="580" height="46" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <circle cx="135" cy="233" r="9" fill="none" stroke="#6366f1" stroke-width="2" />
+  <text x="160" y="238" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="500">Implement responsive CSS Grid portfolio layout</text>
+  <rect x="530" y="222" width="70" height="22" rx="4" fill="#312e81" />
+  <text x="565" y="237" fill="#a5b4fc" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">HIGH PRIO</text>
+  <text x="660" y="238" fill="#ef4444" font-family="sans-serif" font-size="14">✕</text>
+
+  <!-- Task 2 (Completed) -->
+  <rect x="110" y="265" width="580" height="46" rx="8" fill="#0f172a" stroke="#1f2937" stroke-width="1" />
+  <circle cx="135" cy="288" r="9" fill="#10b981" />
+  <path d="M131 288 L134 291 L139 285" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" />
+  <text x="160" y="293" fill="#64748b" font-family="sans-serif" font-size="13" text-decoration="line-through">Build student result grade calculation algorithm</text>
+  <rect x="530" y="277" width="70" height="22" rx="4" fill="#064e3b" />
+  <text x="565" y="292" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">DONE</text>
+  <text x="660" y="293" fill="#64748b" font-family="sans-serif" font-size="14">✕</text>
+
+  <!-- Task 3 (Active) -->
+  <rect x="110" y="320" width="580" height="46" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <circle cx="135" cy="343" r="9" fill="none" stroke="#6366f1" stroke-width="2" />
+  <text x="160" y="348" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="500">Configure dark and light mode localStorage state</text>
+  <rect x="530" y="332" width="70" height="22" rx="4" fill="#1e3a8a" />
+  <text x="565" y="347" fill="#60a5fa" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">FEATURE</text>
+  <text x="660" y="348" fill="#ef4444" font-family="sans-serif" font-size="14">✕</text>
+
+  <!-- Bottom Stats -->
+  <text x="120" y="392" fill="#64748b" font-family="sans-serif" font-size="11">3 items remaining • Stored in LocalStorage</text>
+</svg>

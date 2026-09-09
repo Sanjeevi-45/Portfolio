@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="accentGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="16" fill="url(#bgGrad1)" />
+  <circle cx="700" cy="80" r="120" fill="#8b5cf6" opacity="0.1" filter="blur(40px)" />
+  <circle cx="100" cy="380" r="140" fill="#3b82f6" opacity="0.1" filter="blur(50px)" />
+
+  <!-- Window Header -->
+  <rect x="40" y="35" width="720" height="45" rx="10" fill="#1e293b" />
+  <circle cx="65" cy="57" r="6" fill="#ef4444" />
+  <circle cx="85" cy="57" r="6" fill="#f59e0b" />
+  <circle cx="105" cy="57" r="6" fill="#10b981" />
+  <text x="400" y="62" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" text-anchor="middle">Student Result Management System</text>
+
+  <!-- Metric Badges Top -->
+  <rect x="50" y="100" width="215" height="70" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="70" y="128" fill="#94a3b8" font-family="sans-serif" font-size="12">Total Students</text>
+  <text x="70" y="155" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold">148 Records</text>
+  <circle cx="230" cy="135" r="16" fill="#8b5cf6" fill-opacity="0.2" />
+  <path d="M225 135 L230 140 L237 130" stroke="#a78bfa" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <rect x="290" y="100" width="220" height="70" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="310" y="128" fill="#94a3b8" font-family="sans-serif" font-size="12">Class Average</text>
+  <text x="310" y="155" fill="#10b981" font-family="sans-serif" font-size="22" font-weight="bold">82.4% / Grade A</text>
+
+  <rect x="535" y="100" width="215" height="70" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1" />
+  <text x="555" y="128" fill="#94a3b8" font-family="sans-serif" font-size="12">Pass Percentage</text>
+  <text x="555" y="155" fill="#38bdf8" font-family="sans-serif" font-size="22" font-weight="bold">96.2%</text>
+
+  <!-- Table Container -->
+  <rect x="50" y="190" width="700" height="225" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Table Header -->
+  <rect x="50" y="190" width="700" height="38" rx="10" fill="#1e293b" />
+  <text x="80" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">ID</text>
+  <text x="140" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">STUDENT NAME</text>
+  <text x="310" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">MARKS (M1/M2/M3)</text>
+  <text x="490" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">TOTAL</text>
+  <text x="570" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">GRADE</text>
+  <text x="670" y="214" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">ACTIONS</text>
+
+  <!-- Row 1 -->
+  <line x1="50" y1="270" x2="750" y2="270" stroke="#1e293b" stroke-width="1" />
+  <text x="80" y="252" fill="#94a3b8" font-family="monospace" font-size="12">#101</text>
+  <text x="140" y="252" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="500">Aravind Kumar</text>
+  <text x="310" y="252" fill="#94a3b8" font-family="monospace" font-size="12">88, 92, 85</text>
+  <text x="490" y="252" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">265 / 300</text>
+  <rect x="568" y="238" width="45" height="20" rx="4" fill="#065f46" />
+  <text x="590" y="252" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">A+</text>
+  <rect x="660" y="240" width="22" height="18" rx="3" fill="#3b82f6" fill-opacity="0.2" />
+  <rect x="688" y="240" width="22" height="18" rx="3" fill="#ef4444" fill-opacity="0.2" />
+
+  <!-- Row 2 -->
+  <line x1="50" y1="315" x2="750" y2="315" stroke="#1e293b" stroke-width="1" />
+  <text x="80" y="297" fill="#94a3b8" font-family="monospace" font-size="12">#102</text>
+  <text x="140" y="297" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="500">Priya Dharshini</text>
+  <text x="310" y="297" fill="#94a3b8" font-family="monospace" font-size="12">94, 96, 91</text>
+  <text x="490" y="297" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">281 / 300</text>
+  <rect x="568" y="283" width="45" height="20" rx="4" fill="#065f46" />
+  <text x="590" y="297" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">O</text>
+  <rect x="660" y="285" width="22" height="18" rx="3" fill="#3b82f6" fill-opacity="0.2" />
+  <rect x="688" y="285" width="22" height="18" rx="3" fill="#ef4444" fill-opacity="0.2" />
+
+  <!-- Row 3 -->
+  <line x1="50" y1="360" x2="750" y2="360" stroke="#1e293b" stroke-width="1" />
+  <text x="80" y="342" fill="#94a3b8" font-family="monospace" font-size="12">#103</text>
+  <text x="140" y="342" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="500">Karthik Raja</text>
+  <text x="310" y="342" fill="#94a3b8" font-family="monospace" font-size="12">76, 80, 78</text>
+  <text x="490" y="342" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">234 / 300</text>
+  <rect x="568" y="328" width="45" height="20" rx="4" fill="#1e3a8a" />
+  <text x="590" y="342" fill="#60a5fa" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">B+</text>
+  <rect x="660" y="330" width="22" height="18" rx="3" fill="#3b82f6" fill-opacity="0.2" />
+  <rect x="688" y="330" width="22" height="18" rx="3" fill="#ef4444" fill-opacity="0.2" />
+
+  <!-- Row 4 -->
+  <text x="80" y="387" fill="#94a3b8" font-family="monospace" font-size="12">#104</text>
+  <text x="140" y="387" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="500">Divya Meena</text>
+  <text x="310" y="387" fill="#94a3b8" font-family="monospace" font-size="12">85, 88, 82</text>
+  <text x="490" y="387" fill="#38bdf8" font-family="monospace" font-size="13" font-weight="bold">255 / 300</text>
+  <rect x="568" y="373" width="45" height="20" rx="4" fill="#065f46" />
+  <text x="590" y="387" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">A</text>
+  <rect x="660" y="375" width="22" height="18" rx="3" fill="#3b82f6" fill-opacity="0.2" />
+  <rect x="688" y="375" width="22" height="18" rx="3" fill="#ef4444" fill-opacity="0.2" />
+</svg>

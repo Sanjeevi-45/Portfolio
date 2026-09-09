@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradDash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c17" />
+      <stop offset="100%" stop-color="#141a2e" />
+    </linearGradient>
+    <linearGradient id="dashAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="chartArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#bgGradDash)" />
+  <circle cx="720" cy="90" r="130" fill="#06b6d4" opacity="0.08" filter="blur(50px)" />
+  <circle cx="100" cy="380" r="140" fill="#8b5cf6" opacity="0.08" filter="blur(50px)" />
+
+  <!-- App Bar -->
+  <rect x="30" y="25" width="740" height="45" rx="8" fill="#1e293b" />
+  <circle cx="55" cy="47" r="6" fill="#ef4444" />
+  <circle cx="75" cy="47" r="6" fill="#f59e0b" />
+  <circle cx="95" cy="47" r="6" fill="#10b981" />
+  <text x="125" y="52" fill="#f8fafc" font-family="sans-serif" font-size="13" font-weight="700">MERN Stack | Custom Dashboard Builder</text>
+  <rect x="630" y="34" width="125" height="28" rx="6" fill="url(#dashAccent)" />
+  <text x="692" y="52" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">+ New Widget</text>
+
+  <!-- Left Sidebar Mini -->
+  <rect x="30" y="85" width="60" height="340" rx="8" fill="#111827" stroke="#1e293b" stroke-width="1" />
+  <rect x="42" y="105" width="36" height="32" rx="6" fill="#3b82f6" fill-opacity="0.2" />
+  <circle cx="60" cy="121" r="7" fill="#38bdf8" />
+  <rect x="42" y="150" width="36" height="32" rx="6" fill="#1e293b" />
+  <rect x="52" y="160" width="16" height="12" rx="2" fill="#64748b" />
+  <rect x="42" y="195" width="36" height="32" rx="6" fill="#1e293b" />
+  <circle cx="60" cy="211" r="7" fill="none" stroke="#64748b" stroke-width="1.5" />
+  <rect x="42" y="240" width="36" height="32" rx="6" fill="#1e293b" />
+  <line x1="50" y1="256" x2="70" y2="256" stroke="#64748b" stroke-width="2" />
+
+  <!-- Metric Widget 1 -->
+  <rect x="105" y="85" width="200" height="95" rx="8" fill="#111827" stroke="#1e293b" stroke-width="1" />
+  <text x="125" y="112" fill="#94a3b8" font-family="sans-serif" font-size="12">API Requests</text>
+  <text x="125" y="145" fill="#f8fafc" font-family="sans-serif" font-size="24" font-weight="bold">1.28M</text>
+  <rect x="235" y="125" width="55" height="20" rx="4" fill="#065f46" />
+  <text x="262" y="139" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">+14.2%</text>
+
+  <!-- Metric Widget 2 -->
+  <rect x="320" y="85" width="210" height="95" rx="8" fill="#111827" stroke="#1e293b" stroke-width="1" />
+  <text x="340" y="112" fill="#94a3b8" font-family="sans-serif" font-size="12">Database Latency</text>
+  <text x="340" y="145" fill="#38bdf8" font-family="sans-serif" font-size="24" font-weight="bold">18.4 ms</text>
+  <text x="440" y="143" fill="#10b981" font-family="sans-serif" font-size="11">MongoDB Atlas</text>
+
+  <!-- Metric Widget 3 -->
+  <rect x="545" y="85" width="225" height="95" rx="8" fill="#111827" stroke="#1e293b" stroke-width="1" />
+  <text x="565" y="112" fill="#94a3b8" font-family="sans-serif" font-size="12">Server Health</text>
+  <text x="565" y="145" fill="#10b981" font-family="sans-serif" font-size="24" font-weight="bold">99.98%</text>
+  <text x="660" y="143" fill="#a78bfa" font-family="sans-serif" font-size="11">Node Express</text>
+
+  <!-- Main Chart Widget -->
+  <rect x="105" y="195" width="425" height="230" rx="8" fill="#111827" stroke="#1e293b" stroke-width="1" />
+  <text x="125" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="13" font-weight="600">Throughput &amp; Real-time Traffic (RPM)</text>
+  
+  <!-- Chart Line -->
+  <path d="M 125 360 L 175 320 L 225 340 L 275 280 L 325 300 L 375 250 L 425 270 L 475 230 L 505 240" 
+        fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" />
+  <!-- Area under curve -->
+  <path d="M 125 360 L 175 320 L 225 340 L 275 280 L 325 300 L 375 250 L 425 270 L 475 230 L 505 240 L 505 380 L 125 380 Z" 
+        fill="url(#chartArea)" />
+  <circle cx="475" cy="230" r="5" fill="#60a5fa" stroke="#fff" stroke-width="2" />
+
+  <!-- Right Feed Widget -->
+  <rect x="545" y="195" width="225" height="230" rx="8" fill="#111827" stroke="#1e293b" stroke-width="1" />
+  <text x="565" y="225" fill="#cbd5e1" font-family="sans-serif" font-size="13" font-weight="600">Connected Services</text>
+  
+  <rect x="565" y="245" width="185" height="35" rx="6" fill="#1e293b" />
+  <circle cx="585" cy="262" r="5" fill="#10b981" />
+  <text x="600" y="267" fill="#f8fafc" font-family="sans-serif" font-size="12">Express.js API</text>
+  <text x="735" y="267" fill="#64748b" font-family="monospace" font-size="10" text-anchor="end">:5000</text>
+
+  <rect x="565" y="290" width="185" height="35" rx="6" fill="#1e293b" />
+  <circle cx="585" cy="307" r="5" fill="#10b981" />
+  <text x="600" y="312" fill="#f8fafc" font-family="sans-serif" font-size="12">MongoDB Driver</text>
+  <text x="735" y="312" fill="#64748b" font-family="monospace" font-size="10" text-anchor="end">:27017</text>
+
+  <rect x="565" y="335" width="185" height="35" rx="6" fill="#1e293b" />
+  <circle cx="585" cy="352" r="5" fill="#10b981" />
+  <text x="600" y="357" fill="#f8fafc" font-family="sans-serif" font-size="12">React Client</text>
+  <text x="735" y="357" fill="#64748b" font-family="monospace" font-size="10" text-anchor="end">:3000</text>
+
+  <rect x="565" y="380" width="185" height="30" rx="4" fill="#312e81" />
+  <text x="657" y="400" fill="#c7d2fe" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Full Stack Architecture</text>
+</svg>

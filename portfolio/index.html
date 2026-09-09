@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjeevi I - Portfolio</title>
+  <meta name="description" content="Professional Full Stack Developer portfolio for Sanjeevi I, built with vanilla HTML5, CSS3, and JavaScript.">
+  <meta property="og:title" content="Sanjeevi I - Portfolio">
+  <meta property="og:description" content="Professional Full Stack Developer portfolio for Sanjeevi I, built with vanilla HTML5, CSS3, and JavaScript.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet (Pure CSS3) -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. NAVBAR
+       ====================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="logo" id="nav-logo" aria-label="Sanjeevi I Home">
+        <span class="logo-bracket">&lt;</span>Sanjeevi <span class="logo-accent">I</span><span class="logo-bracket"> /&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" id="nav-link-home">Home</a>
+        <a href="#about" class="nav-link" id="nav-link-about">About</a>
+        <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+        <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+        <a href="#experience" class="nav-link" id="nav-link-experience">Experience</a>
+        <a href="#education" class="nav-link" id="nav-link-education">Education</a>
+        <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Resume Button) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <!-- Sun Icon (for dark mode) -->
+          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon (for light mode) -->
+          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Button -->
+        <a href="./resume/resume.pdf" download="Sanjeevi_I_Resume.pdf" class="btn btn-secondary btn-sm" id="nav-resume-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       2. HERO SECTION
+       ====================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div class="hero-content reveal">
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>Fresher Graduating 2026 • Available for Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Sanjeevi</span>
+        </h1>
+
+        <div class="hero-role-wrapper">
+          <span>I am a </span>
+          <span id="typed-text" class="hero-typed-text"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          A dedicated Computer Science &amp; Design graduate (2026) passionate about building responsive, accessible web applications and reliable backend architectures with JavaScript, Node.js, and modern databases.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="hero-view-projects-btn">
+            <span>View Projects</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <a href="./resume/resume.pdf" download="Sanjeevi_I_Resume.pdf" class="btn btn-secondary" id="hero-download-resume-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-socials">
+          <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" id="hero-github-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sanjeevi-i-399769344/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile" id="hero-linkedin-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.78a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/>
+            </svg>
+          </a>
+          <a href="mailto:sanjeeviilangovan45@gmail.com" class="social-link" aria-label="Send Email" id="hero-email-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Visual Element (Developer Code Window) -->
+      <div class="hero-visual reveal delay-1">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="window-title">developer.js</div>
+            <span class="window-badge">ES6+</span>
+          </div>
+          <div class="code-body">
+            <span class="code-line"><span class="syntax-keyword">const</span> <span class="syntax-var">developer</span> <span class="syntax-punct">=</span> <span class="syntax-punct">{</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">name</span><span class="syntax-punct">:</span> <span class="syntax-string">"Sanjeevi I"</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">role</span><span class="syntax-punct">:</span> <span class="syntax-string">"Full Stack Developer"</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">education</span><span class="syntax-punct">:</span> <span class="syntax-string">"BE Computer Science &amp; Design"</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">graduatingYear</span><span class="syntax-punct">:</span> <span class="syntax-number">2026</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">location</span><span class="syntax-punct">:</span> <span class="syntax-string">"Tamil Nadu, India"</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">stack</span><span class="syntax-punct">:</span> <span class="syntax-punct">[</span></span>
+            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">"HTML5"</span><span class="syntax-punct">,</span> <span class="syntax-string">"CSS3"</span><span class="syntax-punct">,</span> <span class="syntax-string">"JavaScript"</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">"React"</span><span class="syntax-punct">,</span> <span class="syntax-string">"Node.js"</span><span class="syntax-punct">,</span> <span class="syntax-string">"MongoDB"</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-punct">]</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">hireable</span><span class="syntax-punct">:</span> <span class="syntax-keyword">true</span><span class="syntax-punct">,</span></span>
+            <span class="code-line">&nbsp;&nbsp;<span class="syntax-prop">codeWithPassion</span><span class="syntax-punct">:</span> () <span class="syntax-keyword">=&gt;</span> <span class="syntax-string">"Clean code &amp; responsive UI"</span></span>
+            <span class="code-line"><span class="syntax-punct">};</span></span>
+          </div>
+          <div class="code-window-footer">
+            <span>● Ready for entry-level opportunities</span>
+            <span>UTF-8</span>
+          </div>
+        </div>
+
+        <div class="floating-badge">
+          <span class="status-dot"></span>
+          <span>Tamil Nadu, India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       3. ABOUT SECTION
+       ====================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Background</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">A genuine introduction to my academic journey, passion for web technologies, and software engineering goals.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Main Narrative Card -->
+        <div class="about-card reveal">
+          <div>
+            <h3 class="about-intro-title">Hi there! I'm Sanjeevi I</h3>
+            <p class="about-paragraph">
+              I am a final-year student pursuing my <strong>Bachelor of Engineering (B.E.) in Computer Science and Design (2022–2026)</strong> in Tamil Nadu, India. My coursework blends foundational computer science principles with practical software design practices.
+            </p>
+            <p class="about-paragraph">
+              My core passion centers on developing modern web applications. On the frontend, I focus on writing semantic HTML5, clean CSS3 layouts using Flexbox and Grid, and modular vanilla JavaScript or React components. On the backend, I build RESTful services with Node.js and Express.js, connecting them with MongoDB databases.
+            </p>
+            <p class="about-paragraph">
+              As an entry-level developer, I believe in steady continuous learning, writing understandable and maintainable code, and collaborating constructively within software engineering teams.
+            </p>
+          </div>
+
+          <!-- Highlight Icons -->
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="highlight-title">Clean Code</div>
+                <div class="highlight-desc">Semantic, well-structured, and readable code.</div>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="highlight-title">Responsive UI</div>
+                <div class="highlight-desc">Seamless display across mobile, tablet, and desktop.</div>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                  <line x1="4" y1="22" x2="4" y2="15"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="highlight-title">Continuous Growth</div>
+                <div class="highlight-desc">Eager to learn new tools, patterns, and best practices.</div>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="highlight-title">Full Stack Basics</div>
+                <div class="highlight-desc">REST API design and database integrations.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Facts Card -->
+        <div class="facts-card reveal delay-1">
+          <h3 class="facts-card-title">Quick Overview</h3>
+
+          <div class="fact-row">
+            <span class="fact-label">Full Name</span>
+            <span class="fact-value">Sanjeevi I</span>
+          </div>
+
+          <div class="fact-row">
+            <span class="fact-label">Role Focus</span>
+            <span class="fact-value">Full Stack Developer (Entry Level)</span>
+          </div>
+
+          <div class="fact-row">
+            <span class="fact-label">Education</span>
+            <span class="fact-value">B.E. Computer Science and Design</span>
+          </div>
+
+          <div class="fact-row">
+            <span class="fact-label">Graduation Year</span>
+            <span class="fact-value">2026 (2022 - 2026)</span>
+          </div>
+
+          <div class="fact-row">
+            <span class="fact-label">Academic CGPA</span>
+            <span class="fact-badge">6.7 / 10 CGPA</span>
+          </div>
+
+          <div class="fact-row">
+            <span class="fact-label">Primary Location</span>
+            <span class="fact-value">Tamil Nadu, India (Erode)</span>
+          </div>
+
+          <div class="fact-row">
+            <span class="fact-label">Status</span>
+            <span class="fact-badge" style="background: rgba(99, 102, 241, 0.12); color: var(--accent-indigo);">Open to Work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       4. SKILLS SECTION
+       ====================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Capabilities</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-description">Core technologies, frameworks, and developer tools I have worked with across academic and personal projects.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. HTML5 -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/html5.svg" alt="HTML5 Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Proficient</span>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
+          <p class="skill-description">Semantic markup, accessibility standards, form controls, audio/video, and clean DOM hierarchy.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. CSS3 -->
+        <div class="skill-card reveal delay-1">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/css3.svg" alt="CSS3 Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Proficient</span>
+          </div>
+          <h3 class="skill-name">CSS3</h3>
+          <p class="skill-description">Flexbox, CSS Grid, media queries, CSS custom properties, keyframe animations, and responsive styling.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="88%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. JavaScript -->
+        <div class="skill-card reveal delay-2">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/javascript.svg" alt="JavaScript Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Intermediate</span>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-description">ES6+ syntax, DOM manipulation, asynchronous programming, event handling, and Fetch API.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. React.js -->
+        <div class="skill-card reveal delay-3">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/react.svg" alt="React.js Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Intermediate</span>
+          </div>
+          <h3 class="skill-name">React.js</h3>
+          <p class="skill-description">Component architecture, JSX, hooks (useState, useEffect), state lifting, and single page application structure.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Node.js (basic) -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/nodejs.svg" alt="Node.js Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Basic</span>
+          </div>
+          <h3 class="skill-name">Node.js (basic)</h3>
+          <p class="skill-description">Server setup, npm package management, file system handling, and event-driven JavaScript runtime execution.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>68%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="68%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Express.js -->
+        <div class="skill-card reveal delay-1">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/express.svg" alt="Express.js Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Basic</span>
+          </div>
+          <h3 class="skill-name">Express.js</h3>
+          <p class="skill-description">REST API route handlers, middleware integration, JSON request parsing, and backend endpoint management.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>68%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="68%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. MongoDB (basic) -->
+        <div class="skill-card reveal delay-2">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/mongodb.svg" alt="MongoDB Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Basic</span>
+          </div>
+          <h3 class="skill-name">MongoDB (basic)</h3>
+          <p class="skill-description">NoSQL database design, document CRUD operations, collections, and Mongoose schema modeling.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>65%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="65%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Git -->
+        <div class="skill-card reveal delay-3">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/git.svg" alt="Git Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Intermediate</span>
+          </div>
+          <h3 class="skill-name">Git</h3>
+          <p class="skill-description">Version control workflows, staging, commit conventions, branch creation, merging, and conflict resolution.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="80%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. GitHub -->
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/github.svg" alt="GitHub Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Intermediate</span>
+          </div>
+          <h3 class="skill-name">GitHub</h3>
+          <p class="skill-description">Remote repositories, code hosting, pull requests, collaboration, markdown documentation, and GitHub Pages.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>82%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="82%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Java basics -->
+        <div class="skill-card reveal delay-1">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <img src="./assets/icons/java.svg" alt="Java Icon" width="28" height="28">
+            </div>
+            <span class="skill-badge">Basic</span>
+          </div>
+          <h3 class="skill-name">Java Basics</h3>
+          <p class="skill-description">Object-oriented programming (OOP) principles, classes, methods, inheritance, polymorphism, and core algorithms.</p>
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Proficiency</span>
+              <span>60%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" data-level="60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       5. PROJECTS SECTION
+       ====================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Work &amp; Code</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">A curated selection of applications showcasing dynamic user interfaces, mathematical algorithms, and full stack workflows.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+        <button class="filter-btn" data-filter="frontend" id="filter-frontend">Frontend</button>
+        <button class="filter-btn" data-filter="javascript" id="filter-javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="fullstack" id="filter-fullstack">Full Stack</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        
+        <!-- Project 1: Student Result Management System -->
+        <article class="project-card reveal" data-category="frontend javascript">
+          <div class="project-thumbnail-wrapper">
+            <img src="./assets/images/project-student-result.svg" alt="Student Result Management System UI" class="project-thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Frontend / JavaScript</span>
+            <h3 class="project-title">Student Result Management System</h3>
+            <p class="project-description">
+              A dynamic academic evaluation application that accepts individual student subject marks, computes cumulative totals, calculates percentage averages, assigns letter grades, and presents findings in a responsive table with edit and delete record management.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">DOM Manipulation</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Student Result System on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>Code</span>
+              </a>
+              <button type="button" class="btn btn-primary btn-sm" data-open-modal="modal-student-result" aria-label="View Student Result details">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Employee Management Dashboard -->
+        <article class="project-card reveal delay-1" data-category="frontend javascript">
+          <div class="project-thumbnail-wrapper">
+            <img src="./assets/images/project-employee-dashboard.svg" alt="Employee Management Dashboard UI" class="project-thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Frontend / JavaScript</span>
+            <h3 class="project-title">Employee Management Dashboard</h3>
+            <p class="project-description">
+              An interactive human resources dashboard offering complete CRUD functionality, live keyword search, departmental filtering, column sorting, pagination controls, modal input forms, and rigorous form validation in vanilla JavaScript.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CRUD</span>
+              <span class="tech-tag">Pagination</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Employee Dashboard on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>Code</span>
+              </a>
+              <button type="button" class="btn btn-primary btn-sm" data-open-modal="modal-employee-dashboard" aria-label="View Employee Dashboard details">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Responsive Calculator -->
+        <article class="project-card reveal delay-2" data-category="frontend javascript">
+          <div class="project-thumbnail-wrapper">
+            <img src="./assets/images/project-calculator.svg" alt="Calculator App Preview" class="project-thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Frontend / JavaScript</span>
+            <h3 class="project-title">Responsive Calculator</h3>
+            <p class="project-description">
+              A clean arithmetic calculator supporting addition, subtraction, multiplication, division, decimals, clear, backspace, and real-time computation events with responsive touch and keyboard interaction.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Math Engine</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Calculator on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>Code</span>
+              </a>
+              <button type="button" class="btn btn-primary btn-sm" data-open-modal="modal-calculator" aria-label="Open Interactive Calculator Demo">
+                <span>Try Live Demo</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Todo Application -->
+        <article class="project-card reveal" data-category="frontend javascript">
+          <div class="project-thumbnail-wrapper">
+            <img src="./assets/images/project-todo.svg" alt="Todo Application Preview" class="project-thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Frontend / JavaScript</span>
+            <h3 class="project-title">Todo Application</h3>
+            <p class="project-description">
+              A productivity task management tool designed to add new items, toggle task completion states, delete items, and filter tasks by status (All, Active, Completed) using client-side state.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">LocalStorage</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Todo App on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>Code</span>
+              </a>
+              <button type="button" class="btn btn-primary btn-sm" data-open-modal="modal-todo" aria-label="Open Interactive Todo Demo">
+                <span>Try Live Demo</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Custom Dashboard Builder -->
+        <article class="project-card reveal delay-1" data-category="fullstack">
+          <div class="project-thumbnail-wrapper">
+            <img src="./assets/images/project-custom-dashboard.svg" alt="Custom Dashboard Builder Architecture" class="project-thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-category-tag">Full Stack</span>
+            <h3 class="project-title">Custom Dashboard Builder</h3>
+            <p class="project-description">
+              A full stack MERN architecture application allowing developers to customize dashboard layouts, connect to REST API endpoints, configure data cards, and persist dashboard layouts with MongoDB.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Custom Dashboard on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>Code</span>
+              </a>
+              <button type="button" class="btn btn-primary btn-sm" data-open-modal="modal-dashboard-builder" aria-label="View Custom Dashboard details">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       6. EXPERIENCE SECTION
+       ====================================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Career Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-description">Practical industry engagement, professional communication, and collaborative technical exposure.</p>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Business Development Executive</h3>
+                <div class="timeline-company">Codeemy Technologies, Coimbatore</div>
+              </div>
+              <span class="timeline-date-badge">Feb 2026 – July 2026 (6 Months)</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Engaged with prospective clients to understand software requirements and translate business objectives into structured project briefs.</li>
+              <li>Collaborated closely with internal development and design teams to evaluate project scopes, timelines, and technical deliverables.</li>
+              <li>Gained hands-on professional exposure to IT service delivery lifecycles, client relationship workflows, and technical proposal management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       7. EDUCATION SECTION
+       ====================================================================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Academics</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-description">Formal undergraduate training combining technical computer science concepts with modern design principles.</p>
+      </div>
+
+      <div class="education-container">
+        <div class="education-card reveal">
+          <div class="education-header">
+            <div>
+              <h3 class="education-degree">Bachelor of Engineering (B.E.)</h3>
+              <div class="education-meta">Computer Science and Design</div>
+            </div>
+            <div class="education-cgpa-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>CGPA: 6.7 / 10</span>
+            </div>
+          </div>
+
+          <p class="education-description">
+            Enrolled in a 4-year undergraduate curriculum (2022–2026) dedicated to establishing strong programming foundations, database design, software development methodologies, and user-centric digital interfaces.
+          </p>
+
+          <div class="coursework-title">Relevant Core Topics</div>
+          <div class="coursework-tags">
+            <span class="coursework-tag">Data Structures &amp; Algorithms</span>
+            <span class="coursework-tag">Object-Oriented Programming (Java)</span>
+            <span class="coursework-tag">Web Technologies (HTML, CSS, JS)</span>
+            <span class="coursework-tag">Database Management Systems</span>
+            <span class="coursework-tag">User Interface &amp; Interaction Design</span>
+            <span class="coursework-tag">Software Engineering Concepts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       8. CONTACT SECTION
+       ====================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-description">I am actively seeking entry-level Full Stack / Frontend Developer roles. Feel free to send a message or connect through my profiles below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Cards / Direct Links -->
+        <div class="contact-info-list reveal">
+          <!-- Email Card -->
+          <a href="mailto:sanjeeviilangovan45@gmail.com" class="contact-card" id="contact-card-email">
+            <div class="contact-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Direct Email</div>
+              <div class="contact-value">sanjeeviilangovan45@gmail.com</div>
+            </div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-card-github">
+            <div class="contact-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/Sanjeevi-45</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/sanjeevi-i-399769344/" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-card-linkedin">
+            <div class="contact-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.78a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/sanjeevi-i-399769344</div>
+            </div>
+          </a>
+
+          <!-- Location Card -->
+          <div class="contact-card" id="contact-card-location">
+            <div class="contact-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Erode, Tamil Nadu, India</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal delay-1">
+          <h3 class="form-title">Send a Message</h3>
+          <p class="form-subtitle">Fill in the fields below to prepare and send your communication.</p>
+
+          <form id="contact-form" novalidate>
+            <!-- Name Input -->
+            <div class="form-group" id="group-name">
+              <label for="contact-name" class="form-label">Full Name *</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g., Alex Johnson" required>
+              <span class="form-error-msg">Please enter your name (at least 2 characters).</span>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group" id="group-email">
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@example.com" required>
+              <span class="form-error-msg">Please enter a valid email address.</span>
+            </div>
+
+            <!-- Subject Input -->
+            <div class="form-group" id="group-subject">
+              <label for="contact-subject" class="form-label">Subject *</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Role Inquiry / Discussion" required>
+              <span class="form-error-msg">Please provide a subject (at least 3 characters).</span>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="form-group" id="group-message">
+              <label for="contact-message" class="form-label">Message *</label>
+              <textarea id="contact-message" name="message" class="form-textarea" placeholder="Hello Sanjeevi, I came across your portfolio and wanted to discuss..." required></textarea>
+              <span class="form-error-msg">Please write a brief message (at least 10 characters).</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+              <span>Validate &amp; Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Response Status Banner -->
+          <div id="form-response-banner" class="form-response-banner" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       9. FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>Sanjeevi <span class="logo-accent">I</span><span class="logo-bracket"> /&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Full Stack Developer fresher passionate about turning complex ideas into clean, functional, and responsive software.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Connect Links -->
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-links">
+            <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+            <a href="https://www.linkedin.com/in/sanjeevi-i-399769344/" target="_blank" rel="noopener noreferrer">LinkedIn Profile ↗</a>
+            <a href="mailto:sanjeeviilangovan45@gmail.com">sanjeeviilangovan45@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Sanjeevi I. All rights reserved.
+        </div>
+        <div>
+          Crafted with pure HTML5, CSS3, &amp; Vanilla JavaScript
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       10. BACK TO TOP BUTTON
+       ====================================================================== -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- ======================================================================
+       11. INTERACTIVE DEMO MODALS
+       ====================================================================== -->
+
+  <!-- Modal: Student Result Management Details -->
+  <div class="modal-backdrop" id="modal-student-result" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Student Result Management System</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 1rem;">
+          This application enables educators to manage grading workflows with dynamic client-side computations.
+        </p>
+        <ul style="list-style: disc; padding-left: 1.25rem; margin-bottom: 1.5rem; line-height: 1.7;">
+          <li><strong>Dynamic mark input:</strong> Accepts subject marks dynamically through a validated HTML form.</li>
+          <li><strong>Automated calculations:</strong> Calculates cumulative total, average percentage, and grade (O, A+, A, B+, etc.).</li>
+          <li><strong>Dynamic Table Rendering:</strong> Renders calculated results immediately in an HTML table.</li>
+          <li><strong>Record Controls:</strong> Supports inline editing and deletion of student entries from the active table view.</li>
+        </ul>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Repository ↗</a>
+          <button class="btn btn-primary btn-sm modal-close-btn" style="width: auto;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Employee Dashboard Details -->
+  <div class="modal-backdrop" id="modal-employee-dashboard" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Employee Management Dashboard</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 1rem;">
+          A full-featured human resources dashboard built with modular vanilla JavaScript.
+        </p>
+        <ul style="list-style: disc; padding-left: 1.25rem; margin-bottom: 1.5rem; line-height: 1.7;">
+          <li><strong>Complete CRUD Operations:</strong> Create new staff records, Read detailed table lists, Update existing roles, and Delete obsolete entries.</li>
+          <li><strong>Real-time Search &amp; Filter:</strong> Filter instantaneously by department or keyword.</li>
+          <li><strong>Sorting &amp; Pagination:</strong> Multi-column sort (name, ID, date) with configurable page sizing.</li>
+          <li><strong>Modal Forms:</strong> Form with strict client-side validation to prevent bad data.</li>
+        </ul>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Repository ↗</a>
+          <button class="btn btn-primary btn-sm modal-close-btn" style="width: auto;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Interactive Live Calculator Demo -->
+  <div class="modal-backdrop" id="modal-calculator" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Live Calculator Demo</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 1.25rem; font-size: 0.9rem; text-align: center;">
+          Test the vanilla JavaScript mathematical engine directly below:
+        </p>
+
+        <!-- Mini Calculator App -->
+        <div class="mini-calc-container">
+          <div class="mini-calc-screen" id="calc-screen">0</div>
+          <div class="mini-calc-grid">
+            <button class="calc-key clear" data-calc="C">C</button>
+            <button class="calc-key op" data-calc="÷">÷</button>
+            <button class="calc-key op" data-calc="×">×</button>
+            <button class="calc-key op" data-calc="-">−</button>
+
+            <button class="calc-key" data-calc="7">7</button>
+            <button class="calc-key" data-calc="8">8</button>
+            <button class="calc-key" data-calc="9">9</button>
+            <button class="calc-key op" data-calc="+">+</button>
+
+            <button class="calc-key" data-calc="4">4</button>
+            <button class="calc-key" data-calc="5">5</button>
+            <button class="calc-key" data-calc="6">6</button>
+            <button class="calc-key" data-calc=".">.</button>
+
+            <button class="calc-key" data-calc="1">1</button>
+            <button class="calc-key" data-calc="2">2</button>
+            <button class="calc-key" data-calc="3">3</button>
+            <button class="calc-key" data-calc="0">0</button>
+
+            <button class="calc-key eq" data-calc="=">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Interactive Live Todo Demo -->
+  <div class="modal-backdrop" id="modal-todo" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Live Todo App Demo</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="mini-todo-container">
+          <form class="mini-todo-form" id="mini-todo-form">
+            <input type="text" id="mini-todo-input" class="form-input" placeholder="Add a new task..." required style="flex:1;">
+            <button type="submit" class="btn btn-primary btn-sm">Add</button>
+          </form>
+          <div class="mini-todo-list" id="mini-todo-list">
+            <div class="mini-todo-item">
+              <span>Review Full Stack Portfolio</span>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn-sm" style="background:#10b981; color:#fff; border-radius:4px; padding:2px 8px; font-size:11px;" title="Complete">✓</button>
+                <button class="btn-sm" style="background:#ef4444; color:#fff; border-radius:4px; padding:2px 8px; font-size:11px;" title="Delete">✕</button>
+              </div>
+            </div>
+            <div class="mini-todo-item">
+              <span>Prepare for 2026 Developer interviews</span>
+              <div style="display: flex; gap: 6px;">
+                <button class="btn-sm" style="background:#10b981; color:#fff; border-radius:4px; padding:2px 8px; font-size:11px;" title="Complete">✓</button>
+                <button class="btn-sm" style="background:#ef4444; color:#fff; border-radius:4px; padding:2px 8px; font-size:11px;" title="Delete">✕</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Custom Dashboard Builder Details -->
+  <div class="modal-backdrop" id="modal-dashboard-builder" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">Custom Dashboard Builder (MERN)</h3>
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 1rem;">
+          A full-stack application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+        </p>
+        <ul style="list-style: disc; padding-left: 1.25rem; margin-bottom: 1.5rem; line-height: 1.7;">
+          <li><strong>Modular UI Layouts:</strong> Configurable widget placement and responsive container cards.</li>
+          <li><strong>RESTful API Integration:</strong> Express.js endpoints for fetching and synchronizing analytics datasets.</li>
+          <li><strong>NoSQL Storage:</strong> MongoDB schema design for persisting custom user preferences and widget configurations.</li>
+        </ul>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="https://github.com/Sanjeevi-45" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">GitHub Repository ↗</a>
+          <button class="btn btn-primary btn-sm modal-close-btn" style="width: auto;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript File -->
+  <script src="./script.js"></script>
+</body>
+</html>
